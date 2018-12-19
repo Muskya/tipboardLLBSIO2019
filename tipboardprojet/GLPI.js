@@ -50,7 +50,7 @@ function ticketsResolusAnnee(sessionToken) { // Fonction qui va retourner le nom
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },  
-            body: 'tile=text&key=b1&data={"title": "Tickets GLPI", "text": '+resp.totalcount+'}'
+            body: 'tile=text&key=b1&data={"title": "Tickets GLPI", "text": "'+resp.count+'"}'
         })
         .then(function (data) {  
            //console.log('Request success: ', data);  
