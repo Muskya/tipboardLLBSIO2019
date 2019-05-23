@@ -1,8 +1,6 @@
 var fetch = require('node-fetch');
 var URLGetGlances = 'http://10.22.40.192:61208/api/3/';
 var URLPostTipboard = 'http://10.22.40.192:7272/api/v0.1/78359fa056ba4a9b8d6288d525e27324/push'
-var usedMem = 0;
-var usedMemswap = 0;
 
 GetPostCPU();
 GetPostMem();
@@ -38,7 +36,7 @@ function GetPostMachine() {
             },
             body: 'value={"vertical-center": true,\n\
                           "1": {"label_color": "red", "center": false},\n\
-                          "2": {"label_color": "green", "center": false},\n\
+                          "2": {"label_color": "purple", "center": false},\n\
                           "3": {"label_color": "blue", "center": false}}'
         })
         
@@ -152,6 +150,4 @@ function GetPostMemSwap() {
         console.log('Request failure: ', error);  
     });}
     
-
-
 
